@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type="text/javascript">
+            var vetor = [10, 30, 40];
+            var funcao = function(x) {return x * 2};
+            var objeto = {tipo: "teste"};
+
+            alert (
+                String(vetor)
+                + "\r\n"
+                + String(funcao)
+                + "\r\n"
+                + String(objeto)
+                + "\r\n"
+                // dessa forma a conversão de String(objeto) não funcionou pois
+                // quando temos um objeto cuja classe é desconhecida para o javascript a função "String()"
+                // não consegue converter para uma representação aceitável. Nesse caso, podemos usar o objeto global Json
+
+                
+
+            )
+        </script>
+    </body>
+</html>
