@@ -11,13 +11,15 @@
                 + "\r\n"
                 + String(funcao)
                 + "\r\n"
-                + String(objeto)
+                // + String(objeto) < -- dessa forma não funciona
+                + JSON.stringify(objeto) // < -- dessa forma funciona 
                 + "\r\n"
+
                 // dessa forma a conversão de String(objeto) não funcionou pois
                 // quando temos um objeto cuja classe é desconhecida para o javascript a função "String()"
                 // não consegue converter para uma representação aceitável. Nesse caso, podemos usar o objeto global Json
 
-                
+
 
             )
         </script>
