@@ -26,5 +26,28 @@ class veiculo{
 }
 
 class Carro extends Veiculo {
-    constructor
+    constructor (marca, placa, modelo){
+        super();
+        this.marca = marca;
+        this.placa = placa;
+        this.modelo = modelo;
+    }
+    ligar(){
+        super.ligado = true;
+    }
+    desligar(){
+        super.ligado = false;
+    }
+    toString(){
+        return super.toString()
+                + "Ligad: "
+                + this.isLigado
+                + "\r\n"
+    }
 }
+
+
+console.log(Veiculo.marcas());
+let c = new Carro("Fiat", "XPTO 5555", "Bravo");
+c.ligar();
+console.log(c.toString());
